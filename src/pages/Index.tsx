@@ -276,159 +276,211 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-gray-300">
-                  <div className="space-y-8">
-                    <div>
-                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
-                        <Icon name="Ban" size={18} />
-                        Запрещено
-                      </h3>
-                      <ul className="space-y-3">
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="X"
-                            size={16}
-                            className="text-red-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Читерский софт</strong> - использование
-                            любых модов, дающих преимущество (X-Ray, Fly, Speed
-                            и т.д.)
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="X"
-                            size={16}
-                            className="text-red-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Токсичность</strong> - оскорбления, мат,
-                            унижения других игроков
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="X"
-                            size={16}
-                            className="text-red-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Спам в чате</strong> - повторение сообщений,
-                            капс, бессмысленные символы
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="X"
-                            size={16}
-                            className="text-red-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Гриферство</strong> - разрушение чужих
-                            построек без разрешения (кроме гриферского режима)
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="X"
-                            size={16}
-                            className="text-red-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Дюпы и баги</strong> - использование багов
-                            для получения преимущества
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
-                        <Icon name="CheckCircle" size={18} />
-                        Рекомендации
-                      </h3>
-                      <ul className="space-y-3">
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="Check"
-                            size={16}
-                            className="text-green-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Уважение</strong> - относитесь к другим
-                            игрокам дружелюбно
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="Check"
-                            size={16}
-                            className="text-green-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Помощь новичкам</strong> - помогайте новым
-                            игрокам разобраться
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <Icon
-                            name="Check"
-                            size={16}
-                            className="text-green-500 mt-1 flex-shrink-0"
-                          />
-                          <span>
-                            <strong>Командная игра</strong> - играйте в команде,
-                            стройте вместе
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
-                        <Icon name="AlertTriangle" size={18} />
-                        Наказания
-                      </h3>
-                      <div className="bg-slate-800/50 rounded-lg p-4 space-y-2">
-                        <div className="flex justify-between items-center">
-                          <span className="text-yellow-400">
-                            Предупреждение
-                          </span>
-                          <span className="text-sm text-gray-400">
-                            Мелкие нарушения
-                          </span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-orange-400">
-                            Мут (1-24 часа)
-                          </span>
-                          <span className="text-sm text-gray-400">
-                            Нарушения в чате
-                          </span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-red-400">
-                            Кик/Временный бан
-                          </span>
-                          <span className="text-sm text-gray-400">
-                            Серьезные нарушения
-                          </span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-red-600">Перманентный бан</span>
-                          <span className="text-sm text-gray-400">
-                            Читы, дюпы, серьезные нарушения
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
+                  <div className="space-y-6">
                     <div className="bg-[#00D4AA]/10 border border-[#00D4AA]/20 rounded-lg p-4">
                       <p className="text-sm text-center">
                         <Icon name="Info" size={16} className="inline mr-2" />
                         Незнание правил не освобождает от ответственности.
                         Администрация оставляет за собой право изменять правила.
                       </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
+                        <Icon name="ScrollText" size={18} />
+                        Правила сервера
+                      </h3>
+
+                      <div className="space-y-3 max-h-96 overflow-y-auto pr-2">
+                        {[
+                          {
+                            rule: "Запрещено использование читерских программ и модов",
+                            punishment: "Перманентный бан",
+                          },
+                          {
+                            rule: "Запрещен X-Ray, Fly, Speed hack и подобные читы",
+                            punishment: "Перманентный бан",
+                          },
+                          {
+                            rule: "Запрещено использование автокликеров и макросов",
+                            punishment: "Бан 30 дней",
+                          },
+                          {
+                            rule: "Запрещены оскорбления, мат и токсичность",
+                            punishment: "Мут 1-24 часа",
+                          },
+                          {
+                            rule: "Запрещен спам в чате",
+                            punishment: "Мут 30 минут",
+                          },
+                          {
+                            rule: "Запрещены caps (капс) в чате",
+                            punishment: "Предупреждение/Мут",
+                          },
+                          {
+                            rule: "Запрещена реклама других серверов",
+                            punishment: "Бан 7 дней",
+                          },
+                          {
+                            rule: "Запрещено попрошайничество",
+                            punishment: "Предупреждение/Кик",
+                          },
+                          {
+                            rule: "Запрещено гриферство чужих построек",
+                            punishment: "Бан 3 дня",
+                          },
+                          {
+                            rule: "Запрещено воровство в приватных зонах",
+                            punishment: "Бан 1 день",
+                          },
+                          {
+                            rule: "Запрещено использование багов для получения преимущества",
+                            punishment: "Бан 14 дней",
+                          },
+                          {
+                            rule: "Запрещено дюпать предметы",
+                            punishment: "Перманентный бан",
+                          },
+                          {
+                            rule: "Запрещено создание лагающих механизмов",
+                            punishment: "Предупреждение/Снос",
+                          },
+                          {
+                            rule: "Запрещены постройки из неблоков (лодки, рамки)",
+                            punishment: "Снос постройки",
+                          },
+                          {
+                            rule: "Запрещено строительство в чужих территориях",
+                            punishment: "Снос/Предупреждение",
+                          },
+                          {
+                            rule: "Запрещено убийство мирных животных у других игроков",
+                            punishment: "Предупреждение",
+                          },
+                          {
+                            rule: "Запрещено использование альтернативных аккаунтов",
+                            punishment: "Бан всех аккаунтов",
+                          },
+                          {
+                            rule: "Запрещен обход блокировок",
+                            punishment: "Увеличение срока бана",
+                          },
+                          {
+                            rule: "Запрещено выдавать себя за администрацию",
+                            punishment: "Бан 7 дней",
+                          },
+                          {
+                            rule: "Запрещено распространение личной информации",
+                            punishment: "Бан 14 дней",
+                          },
+                          {
+                            rule: "Запрещена продажа игровых предметов за реальные деньги",
+                            punishment: "Перманентный бан",
+                          },
+                          {
+                            rule: "Запрещено мошенничество при торговле",
+                            punishment: "Бан 7 дней",
+                          },
+                          {
+                            rule: "Запрещено создание ловушек для игроков",
+                            punishment: "Предупреждение/Снос",
+                          },
+                          {
+                            rule: "Запрещено использование недоступных предметов",
+                            punishment: "Изъятие/Предупреждение",
+                          },
+                          {
+                            rule: "Запрещено афк в автофармах более 30 минут",
+                            punishment: "Кик/Предупреждение",
+                          },
+                          {
+                            rule: "Запрещено создание лагающих ферм",
+                            punishment: "Снос/Предупреждение",
+                          },
+                          {
+                            rule: "Запрещено строительство порталов в спавне",
+                            punishment: "Снос портала",
+                          },
+                          {
+                            rule: "Запрещено убийство игроков в спавне",
+                            punishment: "Предупреждение/Кик",
+                          },
+                          {
+                            rule: "Запрещено блокировать проходы в общественных местах",
+                            punishment: "Снос/Предупреждение",
+                          },
+                          {
+                            rule: "Запрещено создание неэстетичных построек в спавне",
+                            punishment: "Снос постройки",
+                          },
+                          {
+                            rule: "Запрещено использование команд для получения преимущества",
+                            punishment: "Бан 1 день",
+                          },
+                          {
+                            rule: "Запрещено распространение вирусов через чат",
+                            punishment: "Перманентный бан",
+                          },
+                          {
+                            rule: "Запрещено нарушение правил донатерских привилегий",
+                            punishment: "Снятие привилегий",
+                          },
+                          {
+                            rule: "Обязательно уважительное отношение к администрации",
+                            punishment: "Предупреждение/Бан",
+                          },
+                        ].map((item, index) => (
+                          <div
+                            key={index}
+                            className="bg-slate-800/30 rounded-lg p-3 border border-slate-700/50"
+                          >
+                            <div className="flex items-start gap-3">
+                              <span className="text-[#00D4AA] font-bold text-sm min-w-[2rem]">
+                                {(index + 1).toString().padStart(2, "0")}.
+                              </span>
+                              <div className="flex-1">
+                                <p className="text-sm text-gray-300 mb-1">
+                                  {item.rule}
+                                </p>
+                                <div className="flex items-center gap-2">
+                                  <Icon
+                                    name="AlertTriangle"
+                                    size={12}
+                                    className="text-yellow-500"
+                                  />
+                                  <span className="text-xs text-yellow-400 font-medium">
+                                    {item.punishment}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-slate-800/50 rounded-lg p-4">
+                      <h4 className="text-sm font-semibold text-[#00D4AA] mb-2">
+                        Уровни наказаний:
+                      </h4>
+                      <div className="grid grid-cols-2 gap-2 text-xs">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                          <span>Предупреждение</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                          <span>Мут/Кик</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                          <span>Временный бан</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                          <span>Перманентный бан</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>

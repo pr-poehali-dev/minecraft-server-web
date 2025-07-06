@@ -267,15 +267,170 @@ const Index = () => {
             <TabsContent value="rules" className="mt-6">
               <Card className="bg-slate-900/50 border-slate-800">
                 <CardHeader>
-                  <CardTitle className="text-white">Правила сервера</CardTitle>
+                  <CardTitle className="text-white flex items-center gap-2">
+                    <Icon name="Shield" className="text-[#00D4AA]" />
+                    Правила сервера
+                  </CardTitle>
+                  <CardDescription className="text-gray-400">
+                    Соблюдение правил обязательно для всех игроков
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="text-gray-300">
-                  <ul className="space-y-2">
-                    <li>• Запрещен читерский софт</li>
-                    <li>• Уважительное отношение к игрокам</li>
-                    <li>• Не спамить в чате</li>
-                    <li>• Следовать указаниям администрации</li>
-                  </ul>
+                  <div className="space-y-8">
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
+                        <Icon name="Ban" size={18} />
+                        Запрещено
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="X"
+                            size={16}
+                            className="text-red-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Читерский софт</strong> - использование
+                            любых модов, дающих преимущество (X-Ray, Fly, Speed
+                            и т.д.)
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="X"
+                            size={16}
+                            className="text-red-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Токсичность</strong> - оскорбления, мат,
+                            унижения других игроков
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="X"
+                            size={16}
+                            className="text-red-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Спам в чате</strong> - повторение сообщений,
+                            капс, бессмысленные символы
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="X"
+                            size={16}
+                            className="text-red-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Гриферство</strong> - разрушение чужих
+                            построек без разрешения (кроме гриферского режима)
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="X"
+                            size={16}
+                            className="text-red-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Дюпы и баги</strong> - использование багов
+                            для получения преимущества
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
+                        <Icon name="CheckCircle" size={18} />
+                        Рекомендации
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="Check"
+                            size={16}
+                            className="text-green-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Уважение</strong> - относитесь к другим
+                            игрокам дружелюбно
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="Check"
+                            size={16}
+                            className="text-green-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Помощь новичкам</strong> - помогайте новым
+                            игрокам разобраться
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Icon
+                            name="Check"
+                            size={16}
+                            className="text-green-500 mt-1 flex-shrink-0"
+                          />
+                          <span>
+                            <strong>Командная игра</strong> - играйте в команде,
+                            стройте вместе
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#00D4AA] mb-4 flex items-center gap-2">
+                        <Icon name="AlertTriangle" size={18} />
+                        Наказания
+                      </h3>
+                      <div className="bg-slate-800/50 rounded-lg p-4 space-y-2">
+                        <div className="flex justify-between items-center">
+                          <span className="text-yellow-400">
+                            Предупреждение
+                          </span>
+                          <span className="text-sm text-gray-400">
+                            Мелкие нарушения
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-orange-400">
+                            Мут (1-24 часа)
+                          </span>
+                          <span className="text-sm text-gray-400">
+                            Нарушения в чате
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-red-400">
+                            Кик/Временный бан
+                          </span>
+                          <span className="text-sm text-gray-400">
+                            Серьезные нарушения
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-red-600">Перманентный бан</span>
+                          <span className="text-sm text-gray-400">
+                            Читы, дюпы, серьезные нарушения
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-[#00D4AA]/10 border border-[#00D4AA]/20 rounded-lg p-4">
+                      <p className="text-sm text-center">
+                        <Icon name="Info" size={16} className="inline mr-2" />
+                        Незнание правил не освобождает от ответственности.
+                        Администрация оставляет за собой право изменять правила.
+                      </p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
